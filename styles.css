@@ -54,13 +54,13 @@ h1 {
 
     width: clamp(300px, 50vw, 900px);
 
-    pointer-events: none; /* no molesta al mouse */
+    pointer-events: none; 
 }
 
 /* ABOUT */
 .about {
     display: flex;
-    justify-content: flex-end; /* 🔥 lo manda a la derecha */
+    justify-content: flex-end; 
     
     padding: 10vh 5vw 10vh 10vw; 
 }
@@ -101,4 +101,85 @@ h1 {
 
 .about-text strong {
     font-weight: 400;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 0.2rem;
+  padding: 20vh 0vw; 
+
+  flex-wrap: wrap; 
+}
+
+.card {
+  position: relative;
+
+  width: 520px;
+  height: 820px;
+
+  flex-shrink: 0; 
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.habilidades {
+  background-image: url("Resources/cuadriculado_izquierda.png");
+}
+
+.educacion {
+  background-image: url("Resources/cuadriculado_centro.png");
+}
+
+.idiomas {
+  background-image: url("Resources/cuadriculado_derecha.png");
+}
+
+.card-content {
+  position: absolute;
+
+  top: 18%;
+  left: 12%;
+  right: 12%;
+
+  color: #000;
+}
+
+.card-content h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-content ul {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-left: 2rem;
+}
+
+.leaf {
+  position: absolute;
+  pointer-events: none; 
+}
+
+.leaf-hab {
+  width: 50%;
+  top: 0%;
+  right: -20%;
+
+}
+
+.leaf-idiomas {
+  width: 150%;  
+  bottom: -30%;
+  left: -50%;
+
 }
