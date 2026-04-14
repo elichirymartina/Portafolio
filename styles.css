@@ -1,0 +1,104 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+
+    background-image: url("Resources/fondo.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    padding-left: 6vw;
+}
+
+/* CONTENEDOR DEL HERO */
+.hero-content {
+    position: relative;
+}
+
+/* TITULO PRINCIPAL */
+h1 {
+    font-weight: 500;
+    font-style: italic;
+
+    font-size: clamp(3rem, 10vw, 16rem);
+    line-height: 1.1;
+}
+
+/* IMAGEN ANCLADA AL H1 */
+.hero-image {
+    position: absolute;
+
+    top: 86%;
+    left: -8%;
+
+    width: clamp(300px, 50vw, 900px);
+
+    pointer-events: none; /* no molesta al mouse */
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    justify-content: flex-end; /* 🔥 lo manda a la derecha */
+    
+    padding: 10vh 5vw 10vh 10vw; 
+}
+
+/* TEXTO */
+.about-text {
+    max-width: 800px;
+}
+
+.about-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-align: right;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;
+}
+
+.about-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: right;
+    font-size: 2.5rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    
+    font-size: 1.7rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #aaa;
+}
+
+.about-text strong {
+    font-weight: 400;
+}
