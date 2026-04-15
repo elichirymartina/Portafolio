@@ -127,8 +127,8 @@ h1 {
 .card {
   position: relative;
 
-  width: 520px;
-  height: 820px;
+  width: clamp(260px, 80vw, 520px);
+  aspect-ratio: 520 / 820;
 
   flex-shrink: 0; 
 
@@ -162,7 +162,7 @@ h1 {
 .card-content h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
   margin-bottom: 1rem;
 }
 
@@ -170,7 +170,7 @@ h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
   line-height: 1.5;
   padding-left: 2rem;
 }
@@ -192,4 +192,18 @@ h1 {
   bottom: -30%;
   left: -50%;
 
+}
+
+@media (max-width: 768px) {
+  .leaf-hab {
+    width: 40%;
+    top: 0%;
+    right: -10%;
+  }
+
+  .leaf-idiomas {
+    width: 110%;
+    bottom: -10%;
+    left: -20%;
+  }
 }
